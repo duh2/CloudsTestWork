@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <YandexMap/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+  import YandexMap from "@/components/Maps/YandexMap";
 export default {
+
   name: 'App',
-  components: {
-    HelloWorld
+  components: {YandexMap
   }
 }
+
 </script>
 
 <style>
@@ -24,5 +23,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.ymap-container{
+  width: 750px;
+  height: 500px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
 }
 </style>
